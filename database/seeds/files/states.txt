@@ -1,0 +1,59 @@
+id	slug	name	abbreviation	country	state_id	fips	latitude	longitude	zoom	wikipedia	twitter	url	population	area
+1	alabama	Alabama	AL	US	1	01000	32.61	-86.8073	6	http://en.wikipedia.org/wiki/Alabama		http://www.alabama.gov/			
+2	alaska	Alaska	AK	US	2	02000	61.385	-152.268	3	http://en.wikipedia.org/wiki/Alaska		http://www.alaska.gov/			
+3	american-samoa	American Samoa	AS	US	60	60000	14.2417	-170.72	5	http://en.wikipedia.org/wiki/American_Samoa		http://www.americansamoa.gov/			
+4	arizona	Arizona	AZ	US	4	04000	33.7712	-111.388	5	http://en.wikipedia.org/wiki/Arizona		http://www.az.gov/			
+5	arkansas	Arkansas	AR	US	5	05000	34.9513	-92.3809	6	http://en.wikipedia.org/wiki/Arkansas		http://www.arkansas.gov/			
+6	california	California	CA	US	6	06000	37.2	-119.746	5	http://en.wikipedia.org/wiki/California	https://twitter.com/cagovernment	http://www.ca.gov/			
+7	colorado	Colorado	CO	US	8	08000	39.0646	-105.327	6	http://en.wikipedia.org/wiki/Colorado	https://twitter.com/coloradogov	http://www.colorado.gov/			
+8	connecticut	Connecticut	CT	US	9	09000	41.5834	-72.7622	8	http://en.wikipedia.org/wiki/Connecticut		http://www.ct.gov/			
+9	delaware	Delaware	DE	US	10	10000	39.3498	-75.5148	7	http://en.wikipedia.org/wiki/Delaware	http://twitter.com/Delaware_gov	http://www.delaware.gov/			
+10	district-of-columbia	District of Columbia	DC	US	11	11000	38.8964	-77.0262	10	http://en.wikipedia.org/wiki/Washington,_D.C.		http://dc.gov/			
+11	florida	Florida	FL	US	12	12000	27.8333	-81.717	5	http://en.wikipedia.org/wiki/Florida		http://www.myflorida.com/			
+12	georgia	Georgia	GA	US	13	13000	32.6	-83.6487	6	http://en.wikipedia.org/wiki/Georgia_(U.S._state)	https://twitter.com/georgiagov	http://georgia.gov/			
+13	hawaii	Hawaii	HI	US	15	15000	21.109	-159.5	5	http://en.wikipedia.org/wiki/Hawaii	https://twitter.com/ehawaiigov/	http://www.hawaii.gov/			
+14	idaho	Idaho	ID	US	16	16000	45.5	-114.51	5	http://en.wikipedia.org/wiki/Idaho	https://twitter.com/IDAHOgov	http://www.idaho.gov/			
+15	illinois	Illinois	IL	US	17	17000	40.3363	-89.0022	5	http://en.wikipedia.org/wiki/Illinois		http://www.illinois.gov/			
+16	indiana	Indiana	IN	US	18	18000	39.8647	-86.2604	6	http://en.wikipedia.org/wiki/Indiana		http://www.in.gov/			
+17	iowa	Iowa	IA	US	19	19000	42.0046	-93.214	6	http://en.wikipedia.org/wiki/Iowa		http://www.iowa.gov/			
+18	kansas	Kansas	KS	US	20	20000	38.5111	-98.8	6	http://en.wikipedia.org/wiki/Kansas	https://twitter.com/ksgovernment	http://www.kansas.gov/			
+19	kentucky	Kentucky	KY	US	21	21000	37.669	-86	6	http://en.wikipedia.org/wiki/Kentucky	https://twitter.com/kygov	http://kentucky.gov/			
+20	louisiana	Louisiana	LA	US	22	22000	31.1801	-91.8749	6	http://en.wikipedia.org/wiki/Louisiana		http://louisiana.gov/			
+21	maine	Maine	ME	US	23	23000	45.2	-68.2	6	http://en.wikipedia.org/wiki/Maine	https://twitter.com/mainegov_news	http://www.maine.gov/			
+22	maryland	Maryland	MD	US	24	24000	38.8	-77.4	7	http://en.wikipedia.org/wiki/Maryland	https://twitter.com/statemaryland	http://www.maryland.gov/			
+23	massachusetts	Massachusetts	MA	US	25	25000	42.1	-71.5314	7	http://en.wikipedia.org/wiki/Massachusetts	https://twitter.com/MassGov	http://www.mass.gov/			
+24	michigan	Michigan	MI	US	26	26000	45	-84.5603	5	http://en.wikipedia.org/wiki/Michigan	https://twitter.com/migov	http://www.michigan.gov/			
+25	minnesota	Minnesota	MN	US	27	27000	45.7326	-93.9196	5	http://en.wikipedia.org/wiki/Minnesota		http://www.mn.gov/			
+26	mississippi	Mississippi	MS	US	28	28000	32.5	-89.6812	6	http://en.wikipedia.org/wiki/Mississippi	https://twitter.com/msdotgov	http://www.ms.gov/			
+27	missouri	Missouri	MO	US	29	29000	38.25	-92.302	6	http://en.wikipedia.org/wiki/Missouri	https://twitter.com/MoGov	http://www.mo.gov/			
+28	montana	Montana	MT	US	30	30000	46.9048	-110.326	5	http://en.wikipedia.org/wiki/Montana		http://www.mt.gov/			
+29	nebraska	Nebraska	NE	US	31	31000	41.5	-99.95	6	http://en.wikipedia.org/wiki/Nebraska	https://twitter.com/nebraskagov	http://www.nebraska.gov/			
+30	nevada	Nevada	NV	US	32	32000	38.4199	-117.122	5	http://en.wikipedia.org/wiki/Nevada		http://nv.gov/			
+31	new-hampshire	New Hampshire	NH	US	33	33000	44	-71.5653	6	http://en.wikipedia.org/wiki/New_Hampshire	https://twitter.com/nhgov	http://www.nh.gov/			
+32	new-jersey	New Jersey	NJ	US	34	34000	40.314	-74.5089	6	http://en.wikipedia.org/wiki/New_Jersey		http://www.nj.gov/			
+33	new-mexico	New Mexico	NM	US	35	35000	34.8375	-106.237	5	http://en.wikipedia.org/wiki/New_Mexico		http://www.newmexico.gov/			
+34	new-york	New York	NY	US	36	36000	42.7	-75.5	6	http://en.wikipedia.org/wiki/New_York		http://www.ny.gov/			
+35	north-carolina	North Carolina	NC	US	37	37000	35.6411	-79.8431	6	http://en.wikipedia.org/wiki/North_Carolina	https://twitter.com/ncdotgov/	http://www.nc.gov/			
+36	north-dakota	North Dakota	ND	US	38	38000	47.5362	-100.5	6	http://en.wikipedia.org/wiki/North_Dakota	https://twitter.com/ndgov	http://www.nd.gov/			
+37	ohio	Ohio	OH	US	39	39000	40.3736	-82.7755	6	http://en.wikipedia.org/wiki/Ohio	https://twitter.com/ohgov	http://ohio.gov/	100034	444.2	
+38	oklahoma	Oklahoma	OK	US	40	40000	35.5376	-99.1	6	http://en.wikipedia.org/wiki/Oklahoma	https://twitter.com/okgov	http://www.ok.gov/			
+39	oregon	Oregon	OR	US	41	41000	44.1	-121	6	http://en.wikipedia.org/wiki/Oregon		http://www.oregon.gov/			
+40	pennsylvania	Pennsylvania	PA	US	42	42000	41.3	-77.4	6	http://en.wikipedia.org/wiki/Pennsylvania		http://www.pa.gov/			
+41	puerto-rico	Puerto Rico	PR	US	72	72000	18.2766	-66.335	7	http://en.wikipedia.org/wiki/Puerto_Rico		http://pr.gov/			
+42	rhode-island	Rhode Island	RI	US	44	44000	41.55	-71.5101	8	http://en.wikipedia.org/wiki/Rhode_Island	https://twitter.com/rigov	http://www.ri.gov/			
+43	south-carolina	South Carolina	SC	US	45	45000	33.8191	-80.9066	6	http://en.wikipedia.org/wiki/South_Carolina	https://twitter.com/scgov	http://www.sc.gov/			
+44	south-dakota	South Dakota	SD	US	46	46000	44.2853	-100.4	6	http://en.wikipedia.org/wiki/South_Dakota		http://sd.gov/			
+45	tennessee	Tennessee	TN	US	47	47000	35.7449	-86.1	6	http://en.wikipedia.org/wiki/Tennessee		http://www.tennessee.gov/			
+46	texas	Texas	TX	US	48	48000	31.2	-99.5	5	http://en.wikipedia.org/wiki/Texas	https://twitter.com/texasgov	http://www.texas.gov/			
+47	utah	Utah	UT	US	49	49000	40.1135	-111.854	5	http://en.wikipedia.org/wiki/Utah	https://twitter.com/UtahGov	http://www.utah.gov/			
+48	vermont	Vermont	VT	US	50	50000	44.0407	-72.7093	6	http://en.wikipedia.org/wiki/Vermont		http://www.vermont.gov/			
+49	virgin-islands	Virgin Islands	VI	US	78	78000	18.0001	-64.8199	8	http://en.wikipedia.org/wiki/United_States_Virgin_Islands		http://www.vi.gov/			
+50	virginia	Virginia	VA	US	51	51000	37.768	-79.4	6	http://en.wikipedia.org/wiki/Virginia		http://www.virginia.gov/			
+51	washington	Washington	WA	US	53	53000	47.3917	-121	6	http://en.wikipedia.org/wiki/Washington_(state)		http://access.wa.gov/			
+52	west-virginia	West Virginia	WV	US	54	54000	38.468	-80.9696	6	http://en.wikipedia.org/wiki/West_Virginia	https://twitter.com/wvgov	http://www.wv.gov/			
+53	wisconsin	Wisconsin	WI	US	55	55000	44.2563	-89.6385	5	http://en.wikipedia.org/wiki/Wisconsin		http://www.wisconsin.gov/			
+54	wyoming	Wyoming	WY	US	56	56000	43.15	-107.5	6	http://en.wikipedia.org/wiki/Wyoming		http://www.wyo.gov/			
+55	federated-states-of-micronesia	Federated States of Micronesia	FM	US	64	64000	6.91667	158.183	5	http://en.wikipedia.org/wiki/Federated_States_of_Micronesia		http://www.fsmgov.org/			
+56	guam	Guam	GU	US	66	66000	13.47	144.75	9	http://en.wikipedia.org/wiki/Guam		http://www.guam.gov/			
+57	northern-mariana-islands	Northern Mariana Islands	MP	US	69	69000	16.2	145.551	5	http://en.wikipedia.org/wiki/Northern_Mariana_Islands		http://gov.mp/			
+58	palau	Palau	PW	US	70	70000	7.35	134.467	7	http://en.wikipedia.org/wiki/Palau		http://palaugov.org/			
