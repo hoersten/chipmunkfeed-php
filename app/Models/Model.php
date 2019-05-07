@@ -30,7 +30,7 @@ class Model extends EloquentModel {
     return 'slug';
   }
 
-  static public function find_by_slug($slug) {
+  static public function findBySlug($slug) {
     return self::where(['slug' => $slug])->firstOrFail();
   }
 }

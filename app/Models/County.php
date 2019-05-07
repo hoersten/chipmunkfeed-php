@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Traits\HasDescription;
 use Cviebrock\EloquentSluggable\Sluggable;
+use Illuminate\Support\Str;
 
 class County extends Model {
   use HasDescription;
@@ -26,7 +27,10 @@ class County extends Model {
     return [
       'slug' => [
         'source' => 'name',
-        'unique' => false
+        'unique' => true,
+        'method' => function($string, $separator) {
+          return Str::Slug($this->state->name) . '/' . Str::slug($this->name . ' ' . $this->county_type);
+        }
       ]
     ];
   }
@@ -36,14 +40,10 @@ class County extends Model {
   }
 
   public function capitals() {
-    return $this->cities()->wherePivot('capital', '>=', 1)->orderBy('capital');
+    return $this->belongsToMany(City::class)->wherePivot('capital', '>=', 1)->orderBy('capital', 'asc');
   }
 
   public function cities() {
     return $this->belongsToMany(City::class)->orderBy('name');
-  }
-
-  protected function getSlugNameAttribute() {
-    return $this->state->name . '/' . $this->name;
   }
 }

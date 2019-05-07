@@ -13,7 +13,7 @@ Learn more about #{ $state->name }
       @if ($state->capital() != null)
       %li
         %strong Capital:
-        %a{ 'href' => $state->capital()->slug } #{ $state->capital()->name }
+        %a{ 'href' => route('cities.show', ['state' => '', 'city' => $state->capital()]) } #{ $state->capital()->name }
       @endif
       %li
         %strong Abbreviation:

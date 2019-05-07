@@ -28,6 +28,7 @@ class CreateCitiesTable extends Migration {
       $table->string('wikipedia')->nullable();
       $table->string('twitter')->nullable();
       $table->string('url')->nullable();
+      $table->integer('elevation')->nullable();
       $table->integer('population')->nullable();
       $table->float('area')->nullable();
       $table->decimal('latitude', 10, 7)->nullable();

@@ -22,10 +22,17 @@
             <directory suffix=".php">./app</directory>
         </whitelist>
     </filter>
+   <logging>
+        <log type="coverage-html" target="./tests/build/coverage"/>
+        <log type="coverage-clover" target="./tests/build/logs/clover.xml"/>
+        <log type="junit" target="./tests/build/logs/junit.xml"/>
+    </logging>
     <php>
         <env name="APP_ENV" value="testing"/>
         <env name="CACHE_DRIVER" value="array"/>
         <env name="SESSION_DRIVER" value="array"/>
         <env name="QUEUE_DRIVER" value="sync"/>
+        <env name="DB_CONNECTION" value="sqlite"/>
+        <env name="DB_DATABASE" value=":memory:"/>
     </php>
 </phpunit>

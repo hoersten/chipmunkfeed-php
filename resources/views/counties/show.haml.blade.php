@@ -22,18 +22,18 @@ Learn more about #{ $county->name }
         %ul.list-no-style.list-inline
           @foreach($county->capitals as $index => $capital)
           %li
-            %a{ 'href' => '/' . $capital->slug} #{ $capital->name }
+            %a{ 'href' => route('cities.show', ['state' => '', 'city' => $capital ]) } #{ $capital->name }
           @endforeach
         @else
-        %a{ 'href' => '/' . $county->capitals()->first()->slug} #{ $county->capitals()->first()->name }
+        %a{ 'href' => route('cities.show', ['state' => '', 'city' => $county->capitals()->first() ]) } #{ $county->capitals()->first()->name }
         @endif
       @endif
-      @include('shared.population', [ 'obj' => $state])
-      @include('shared.area', [ 'obj' => $state])
+      @include('shared.population', [ 'obj' => $county])
+      @include('shared.area', [ 'obj' => $county])
       %li
         %strong Cities:
-        %a{ 'href' => '/' . $county->slug . '/cities' } #{ number_format($county->cities->count()) . " Cities" }
-    @include('shared.web_links', [ 'obj' => $state])
+        %a{ 'href' => route('counties.show', [ 'county' => $county ]) . '/cities' } #{ number_format($county->cities->count()) . " Cities" }
+    @include('shared.web_links', [ 'obj' => $county])
   .col-md-4.col-sm-6.hidden-xs
     #map_div{ 'data-state' => $state->abbreviation, 'data-center-lat' => $state->latitude, 'data-center-long' => $state->longitude, 'data-center-zoom' => $state->zoom }
 @include('shared.description', [ 'obj' => $county])

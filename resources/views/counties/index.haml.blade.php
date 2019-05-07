@@ -20,6 +20,6 @@
     %ul.list-unstyled.row
       @foreach($counties as $county)
       %li.col-md-3.col-sm-4.col-6
-        %a{ 'href' => '/' . $county->slug } #{ $county->name }
+        %a{ 'href' => route('counties.show', ['county' => $county ]) } #{ $county->name }
       @endforeach
 @endsection

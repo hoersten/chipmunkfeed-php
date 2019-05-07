@@ -13,25 +13,27 @@ Learn more about #{ $city->name }
     %ul
       %li
         %strong State:
-        %a{'href' => route('states.show', ['state' => $city->state])}
+        %a{'href' => route('states.show', ['state' => $city->state])}<
           #{ $city->state->name }
         @if ($city->state_capital)
         (State capital)
         @endif
+      @if ($city->counties()->count() > 0)
       %li
-        %strong Primary County:
-        %a{'href' => '/' . $city->counties()->first()->slug}
+        %strong Primary #{ $city->counties()->first()->county_type}:
+        %a{'href' => route('counties.show', ['county' => $city->counties()->first() ]) }<
           #{ $city->counties()->first()->name}
         @if ($city->counties()->where('capital', '>=', 1)->count() > 0)
-        (County capital)
+        (#{ $city->counties()->first()->county_type} capital)
         @endif
       @if ($city->counties()->count() > 1)
       %li
-        %strong #{'Other ' . str_plural('County', $city->counties()->count() - 1) . ':' }
+        %strong #{'Other ' . str_plural($city->counties()->first()->county_type, $city->counties()->count() - 1) . ':' }
         @foreach($city->counties()->skip(1)->limit(100)->get() as $county)
-        %a{'href' => '/' . $county->slug}
+        %a{'href' => route('counties.show', [ 'county' => $county ]) }<
           #{ $county->name}
         @endforeach
+      @endif
       @endif
       @include('shared.population', [ 'obj' => $city])
       @include('shared.area', [ 'obj' => $city])

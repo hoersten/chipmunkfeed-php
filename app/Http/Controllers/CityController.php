@@ -31,8 +31,8 @@ class CityController extends Controller {
    * @param \App\Model\County $county
    * @return \Illuminate\Http\Response
    */
-  public function countyIndex($state, $county) {
-    $county = County::find_by_slug($state . '/' . $county);
+  public function countyIndex($county) {
+    $county = County::findBySlug($county);
     $state = $county->state;
     $breadcrumbs = [ [ 'url' => route('home'), 'text' => 'Home' ], 
                      [ 'url' => route('states.show', ['state' => $state] ), 'text' => $state->name, ], 
@@ -44,25 +44,6 @@ class CityController extends Controller {
   }
 
   /**
-   * Show the form for creating a new resource.
-   *
-   * @return \Illuminate\Http\Response
-   */
-  public function create() {
-    //
-  }
-
-  /**
-   * Store a newly created resource in storage.
-   *
-   * @param  \Illuminate\Http\Request  $request
-   * @return \Illuminate\Http\Response
-   */
-  public function store(Request $request) {
-    //
-  }
-
-  /**
    * Display the specified resource.
    *
    * @param  string  $state
@@ -70,43 +51,12 @@ class CityController extends Controller {
    * @return \Illuminate\Http\Response
    */
   public function show($state, $city) {
-    $city = City::find_by_slug($state . '/' . $city);
+    $city = City::findBySlug($state . '/' . $city);
     $state = $city->state;
     $breadcrumbs = [ [ 'url' => route('home'), 'text' => 'Home' ], 
                      [ 'url' => route('states.show', ['state' => $state] ), 'text' => $state->name, ], 
                      [ 'url' => route('cities.show', ['state' => $state->name, 'city' => $city->name ] ), 'text' => $city->name, 'active' => true ], 
                    ];
     return view('cities.show', ['city' => $city, 'breadcrumbs' => $breadcrumbs]);
-  }
-
-  /**
-   * Show the form for editing the specified resource.
-   *
-   * @param  \App\Models\City  $city
-   * @return \Illuminate\Http\Response
-   */
-  public function edit(City $city) {
-    //
-  }
-
-  /**
-   * Update the specified resource in storage.
-   *
-   * @param  \Illuminate\Http\Request  $request
-   * @param  \App\Models\City  $city
-   * @return \Illuminate\Http\Response
-   */
-  public function update(Request $request, City $city) {
-    //
-  }
-
-  /**
-   * Remove the specified resource from storage.
-   *
-   * @param  \App\Models\City  $city
-   * @return \Illuminate\Http\Response
-   */
-  public function destroy(City $city) {
-    //
   }
 }

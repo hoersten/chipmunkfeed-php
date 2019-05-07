@@ -18,10 +18,12 @@ Route::get('/states', 'StateController@index')->name('states.index');
 Route::get('/{state}', 'StateController@show')->name('states.show');
 // Counties
 Route::get('/{state}/counties', 'CountyController@index')->name('counties.index');
-Route::get('/{state}/{county}', 'CountyController@show')
+Route::get('/{county}', 'CountyController@show')
   ->where('county', '.+-(county|borough|census-area|parish)')
 	->name('counties.show');
 // Cities
 Route::get('/{state}/cities', 'CityController@index')->name('cities.state_index');
 Route::get('/{state}/{city}', 'CityController@show')->name('cities.show');
-Route::get('/{state}/{county}/cities', 'CityController@countyIndex')->name('cities.county_index');
+Route::get('/{county}/cities', 'CityController@countyIndex')
+  ->where('county', '.+-(county|borough|census-area|parish)')
+  ->name('cities.county_index');

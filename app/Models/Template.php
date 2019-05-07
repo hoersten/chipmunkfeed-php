@@ -4,14 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Description extends Model {
+class Template extends Model {
   /**
-   * The attributes that are mass assignable.
-   *
-   * @var array
-   */
+  * The attributes that are mass assignable.
+  *
+  * @var array
+  */
   protected $fillable = [
-    'model_id', 'model_type', 'description', 'tag', 'active',
+    'model_type', 'template', 'tag', 'active',
   ];
 
   /**
@@ -20,14 +20,10 @@ class Description extends Model {
    * @var array
    */
   protected $casts = [
-      'active' => 'boolean',
+    'active' => 'boolean',
   ];
 
   public function scopeActive($query) {
     return $query->where('active', '=', true);
-  }
-
-  public function model() {
-    return $this->morphTo();
   }
 }

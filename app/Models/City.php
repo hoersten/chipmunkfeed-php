@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Traits\HasDescription;
 use Cviebrock\EloquentSluggable\Sluggable;
+use Illuminate\Support\Str;
 
 class City extends Model {
   use HasDescription;
@@ -35,7 +36,10 @@ class City extends Model {
     return [
       'slug' => [
         'source' => 'name',
-        'unique' => false
+        'unique' => true,
+        'method' => function($string, $separator) {
+          return Str::Slug($this->state->name) . '/' . Str::slug($this->name);
+        }
       ]
     ];
   }

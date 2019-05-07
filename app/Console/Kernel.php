@@ -13,6 +13,9 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
+        Commands\TemplateState::class,
+        Commands\TemplateCounty::class,
+        Commands\TemplateCity::class,
         //
     ];
 
