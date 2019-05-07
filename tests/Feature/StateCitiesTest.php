@@ -39,7 +39,7 @@ class StateCitiesTest extends TestCase {
     $string = '<h3>\\s*List of Cities\\s*<\\/h3>';
     $this->assertRegExp('/' . $string . '/', $response->getContent());
     foreach ($cities as $city) {
-      $response->assertSee('<a href="' . route('cities.show', ['state' => $city->state, 'city' => $city]) . "\">$city->name</a>");
+      $response->assertSee('<a href="' . route('cities.show', ['state' => '', 'city' => $city]) . "\">$city->name</a>");
     }
   }
 }

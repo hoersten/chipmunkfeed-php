@@ -20,7 +20,7 @@
     %ul.list-unstyled.row
       @foreach($cities as $city)
       %li.col-md-3.col-sm-4.col-6
-        %a{ 'href' => route('cities.show', [ 'state' => $state, 'city' => $city ]) } #{ $city->name }
+        %a{ 'href' => route('cities.show', [ 'state' => '', 'city' => $city ]) } #{ $city->name }
         //=city.decorate.display_capital_info
       @endforeach
 @endsection
